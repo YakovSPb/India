@@ -1,0 +1,513 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: "ProximaNova", sans-serif
+	overflow-x: hidden
+	color: #fff
+
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6	
+	line-height: 1.4
+	margin: 0
+	padding: 0
+	
+ul, li
+	padding: 0
+	margin: 0
+	
+a, a:focus, a:active
+	color: $accent
+a:hover
+	color: $accent
+	text-decoration: underline
+b, strong
+  font-family: "ProximaNovaBold", sans-serif
+  font-weight: 500
+.button
+    display: inline-block
+    border: none
+    color: #fff
+    line-height: 28px
+    font-family: "ProximaNovaBold", sans-serif
+    text-decoration: none
+    background: linear-gradient(180deg, #8dc033, #71a418)
+    box-shadow: inset 0 3px 0 0 rgba(255,255,255,0.2)
+    //box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2)
+    padding: 18px 20px
+    height: 60px
+    width: 310px
+    font-size: 18px
+    text-transform: uppercase
+    border-radius: 75px
+    text-align: center
+    position: relative
+    outline: none
+    transition: all .3s ease
+    &:focus, &:hover
+        text-decoration: none
+        color: #fff
+    &:hover
+        opacity: .8
+        &::after
+            opacity: .22
+    &:active
+        background-color: darken($accent, 5%)
+        &::after
+            opacity: .32
+.button-trans
+  color: white
+  font-family: "ProximaNova", sans-serif
+  font-size: 15px
+  width: 249px
+  height: 48px
+  background: rgba(255,255,255, 0.2)
+  border-radius: 24px
+  line-height: 48px
+  text-transform: none
+  box-shadow: none
+  padding: 0
+  &:hover
+    background: rgba(0,0,0, 0.5)
+  &::after
+    height: 0
+
+.button-empty
+  color: #212121
+  font-family: "ProximaNovaBold", sans-serif
+  font-size: 15px
+  width: 200px
+  border: #8dc033 2px solid
+  height: 40px
+  background: #fff
+  border-radius: 24px
+  line-height: 37px
+  text-transform: none
+  box-shadow: none
+  padding: 0
+  &:hover
+    background: #8dc033
+    color: #ffffff
+  &::after
+    height: 0
+
+.button-blue
+  width: 350px
+  height: 60px
+  text-transform: none
+  background-color: #c2ae86
+  background-image: linear-gradient(180deg, #45c7b9 0%, #36b3a6 100%)
+  border-radius: 30px
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 3px 0 rgba(255, 255, 255, 0.2)
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+//HEADER//
+.site-header
+  min-height: 1000px
+  background-position: 100%
+  background-size: cover
+  position: relative
+  z-index: 0
+  padding-bottom: 270px
+
+
+  &:before
+    content: ''
+    background-image: url(../img/head-bg.png)
+    background-size: cover
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: -1
+    opacity: .35
+  &:after
+    content: ''
+    background-color: #031938
+    opacity: .5
+    width: 100%
+    height: 100%
+    top: 0
+    position: absolute
+    z-index: -1
+.top-line
+  height: 125px
+  .logo
+    margin-top: 40px
+    img
+      height: 63px
+      transition: all .5s ease
+      &:hover
+        opacity: .7
+  .phones-wrap
+    float: right
+    margin-top: 50px
+    .phone
+      display: inline-block
+      font-family: "ProximaNovaBold", sans-serif
+      font-size: 22px
+      margin-right: 40px
+
+
+.header-composition
+  margin-top: 80px
+  span
+    font-size: 22px
+  .h1
+    font-family: "Graffiti1C", sans-serif
+    font-size: 70px
+    line-height: 80px
+    position: relative
+    &::before
+      content: 'Экскурсии в Гоа и по всей Индии'
+      position: absolute
+      top: -12px
+      left: -38px
+      font-family: "Graffiti4C", sans-serif
+      font-size: 80px
+      line-height: 90px
+      font-weight: 400
+      letter-spacing: 1.8px
+  p
+    font-size: 30px
+    line-height: 34px
+    span
+      font-family: "ProximaNovaXbold", sans-serif
+
+.icons-wrap
+  margin-top: 50px
+  .head-icon
+    width: 360px
+    float: left
+    img
+      width: 55px
+      height: auto
+      float: left
+      margin-right: 20px
+    p
+      text-transform: uppercase
+      font-size: 15px
+      line-height: 22px
+
+
+.forms
+  border: rgba(255, 255, 255, .30) 15px solid
+  width: 390px
+  margin: 55px 0
+  padding: 25px 22px
+  font-size: 20px
+  line-height: 28px
+
+  span
+    position: relative
+    &:before
+     top: 5px
+     left: 10px
+     content: ''
+     width: 17px
+     position: absolute
+     height: 20px
+     background-repeat: no-repeat
+  .name
+    &:before
+      background-image: url(../img/user.svg)
+  .phone
+    &:before
+      background-image: url(../img/telephone.svg)
+      background-size: 17px
+  .message
+    &:before
+      background-image: url(../img/comment.svg)
+      background-size: 18px
+      width: 20px
+  p
+    padding-right: 55px
+    margin-bottom: 0
+  input
+    background-color: transparent
+    width: 100%
+    padding-left: 40px
+    padding-top: 40px
+    padding-bottom: 10px
+    border: none
+    border-bottom: #616f7b 1px solid
+    color: #ffffff
+    font-size: 15px
+  input::placeholder
+    color: #fff
+    text-transform: uppercase
+  input[type="text"]
+    color: #fff
+    text-transform: none
+
+.button-wrap
+  margin-top: 28px
+  margin-bottom: 35px
+.sendmes
+  font-size: 14px
+  line-height: 18px
+  span
+    text-decoration: underline
+
+.header-button-cloud
+  background-image: url(../img/bg-cloud.png)
+  position: absolute
+  background-size: cover
+  background-position: bottom center
+  bottom: -214px
+  left: 0
+  width: 100%
+  height: 449px
+  z-index: 0
+.mouse
+    width: 30px
+    height: 40px
+    position: absolute
+    left: 50%
+    margin-left: -30px
+    background-repeat: no-repeat
+    transition: all .5s ease
+    &:hover
+      transform: scale(1.2)
+//END HEADER//
+
+//SECTION SECT-2//
+.sect-2
+  background-color: #fff
+  min-height: 1800px
+  z-index: 2
+  position: relative
+  &::before
+    box-shadow: inset 0 -52px 19px -8px rgba(255,255,255,1)
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100px
+    left: 0
+    top: -100px
+  &__wrap
+    position: relative
+    text-align: center
+    &__head
+      padding:
+        top: 100px
+        bottom: 40px
+      position: relative
+      z-index: 0
+      .shadow
+        font-size: 150px
+        width: 100%
+        font-family: "Graffiti1C", sans-serif
+        color: #f5f5f5
+        position: absolute
+        left: -7px
+        top: -37px
+        z-index: -1
+        text-transform: uppercase
+      .quest
+        z-index: 120
+        font-family: "Graffiti1C", sans-serif
+        font-size: 46px
+        line-height: 1.1
+        color: #212121
+        text-transform: uppercase
+        padding-bottom: 46px
+        .button
+          margin-bottom: 50px
+
+.sect-2__content
+    background-image: url(../img/bg-s2.png)
+    background-color: #fff
+    background-size: cover
+    background-position: top center
+    background-repeat: repeat-x
+    min-height: 1000px
+    width: 100%
+    z-index: 20
+    position: relative
+    text-align: center
+    padding-bottom: 200px
+    &::before
+      content: ''
+      position: absolute
+      top: -245px
+      left: 0
+      background-image: url(../img/left-bush.png)
+      background-size: 100%
+      width: 350px
+      height: 328px
+      background-repeat: no-repeat
+    &::after
+      content: ''
+      position: absolute
+      top: -245px
+      right: -125px
+      background-image: url(../img/right-bush.png)
+      background-size: 100%
+      width: 350px
+      height: 328px
+      background-repeat: no-repeat
+    .h2
+      color: #000
+      font-family: "Graffiti1C", sans-serif
+      font-size: 30px
+      position: relative
+      display: inline-block
+      margin-top: 120px
+      padding: 0 100px
+      &::before
+        content: 'Актуальные предложения'
+        position: absolute
+        font-family: "Graffiti4C", sans-serif
+        line-height: 90px
+        font-weight: 400
+        letter-spacing: 0
+        top: -19px
+        left: 50px
+        font-size: 58px
+
+.item-wrap
+  margin-top: 40px
+  margin-bottom: 50px
+  background-color: #fff
+  text-align: left
+  position: relative
+  height: auto
+  padding-bottom: 30px
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05)
+  img
+    width: 100%
+    height: 240px
+  &__circle
+    width: 78px
+    height: 78px
+    position: absolute
+    background-color: #45c7b9
+    border-radius: 10em
+    font-family: "ProximaNovaBold", sans-serif
+    text-align: center
+    line-height: 78px
+    font-size: 18px
+    left: 20px
+    top: 20px
+
+  &__content
+    padding-left: 30px
+    h4
+      color: #212121
+      font-family: "ProximaNovaBold", sans-serif
+      font-size: 22px
+      padding:
+        top: 30px
+        bottom: 20px
+    p
+      color: #212121
+      font-size: 15px
+      padding: 0
+      margin-top: 0
+      margin-bottom: 40px
+
+//END SECTION SECT-2//
+
+
+//PRELOADER//
+@mixin opacity($opacity)
+  opacity: $opacity / 100
+  filter: alpha(opacity=$opacity)
+.pulse
+  position: relative
+  left: 50%
+  top: 50vh
+  margin:
+    left: -40px
+    top: -40px
+  &::before, &::after
+    content: ''
+    border: 5px solid #323232
+    width: 80px
+    height: 80px
+    border-radius: 500px
+    position: absolute
+  &::before
+    animation: pulse-outer .8s ease-in infinite
+  &::after
+    animation: pulse-inner .8s linear infinite
+@keyframes pulse-outer
+  0%
+    @include opacity(100)
+
+  50%
+    @include opacity(50)
+
+  100%
+    @include opacity(0)
+@keyframes pulse-inner
+  0%
+    @include opacity(0)
+    transform: scale(0)
+
+  100%
+    @include opacity(100)
+    transform: scale(1)
+.preloader
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: 100
+  background-color: #22415b
+
+
+@import "media" // Всегда в конце
