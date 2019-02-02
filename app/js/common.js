@@ -1,5 +1,34 @@
 $(function() {
 
+    var owl = $(".slider");
+    owl.owlCarousel({
+        loop : true,
+        items: 4,
+        itemClass: "slide-wrap",
+        nav: false,
+        dots: true,
+        dotsEach: 2,
+            responsive:{
+        0:{
+            items:1,
+            dotsEach: 1    
+        },
+
+        600:{
+            items:2,
+            dotsEach: 1
+        },
+        1000:{
+            items:3,
+            dotsEach: 1
+        },
+        1200:{
+            items:4,    
+
+        },
+     }
+    });
+
 
     $(document).ready(function() {
 
