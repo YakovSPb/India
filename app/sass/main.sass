@@ -34,6 +34,7 @@ body input:required:valid,
 body textarea:required:valid
   color: #fff
 
+
 html, body
   height: 100%
 
@@ -283,7 +284,8 @@ b, strong
     background-color: transparent
     width: 100%
     padding-left: 40px
-    padding-top: 40px
+    padding-top: 10px
+    margin-top: 30px
     padding-bottom: 10px
     border: none
     border-bottom: #616f7b 1px solid
@@ -521,7 +523,6 @@ b, strong
 .sect-4
   border-radius: 10em
   text-align: center
-  padding-bottom: 100px
   position: relative
   .item
     img
@@ -606,7 +607,84 @@ b, strong
 //END SLIDER//
 
 //SECTION 5//
+.sect-5
+  text-align: center
+  min-height: 1100px
+  background: url(../img/bg-5.jpg) center top no-repeat
+  background-repeat: no-repeat
+  background-color: #f4f3f1
+  .h2
+    margin-top: 40px
+    margin-bottom: 40px
+    &::before
+      content: 'Все экскурсии проходят только на транспорте из нашего парка'
+      top: 0px
+      left: 15px
+      font-size: 37px
+      line-height: 37px
+  .bus
+    img
+      max-width: 100%
+  .bus-items
+    display: flex
+    justify-content: space-between
+    .bus-item
+      text-align: center
+      margin: 15px
+      span
+        font-family: "Graffiti1C", sans-serif
+        color: #dbdad9
+        font-size: 90px
+      p
+        color: #000
+        font-size: 18px
+        margin-top: -72px
+
+.bus-form
+    border: #dbdad9 10px solid
+    padding-bottom: 20px
+    margin-bottom: 20px
+    .forms
+      width: 100%
+      border-color: transparent
+      padding-top: 0
+      margin-top: 10px
+
+      input[type="text"]
+        width: 100%
+        margin-right: 22px
+        color: #212121
+      input::placeholder
+        color: #212121
+      input[type="text"]:focus
+        color: #212121
+        cursor: text
+        outline: none
+      p
+        color: #212121 
+        margin: 0
+        padding: 0
+        font-size: 30px
+        line-height: 36px
+      span
+      .sendmes
+        color: #212121
+        padding-top: 40px
+      .name
+        &:before
+          background-image: url(../img/user2.svg)
+      .phone
+        &:before
+          background-image: url(../img/telephone2.svg)
+      .message
+        &:before
+          background-image: url(../img/comment2.svg)
+      .button
+        max-width: 306px
 
 
-
+//SECTION-6//
+.sect-6
+  min-height: 1000px
+  background: url(../img/bg-6.jpg) center top no-repeat
 @import "media" // Всегда в конце
