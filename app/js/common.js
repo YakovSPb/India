@@ -1,4 +1,25 @@
 $(function() {
+    
+
+    var clock;
+    clock = $(".clock").FlipClock({
+        clockFace : "DailyCounter",
+        autoStart : false,
+        language: 'ru-ru'﻿,
+        callbacks : {
+            stop : function(){
+                $('.message').html("Время прошло");
+            }
+        }
+    });
+
+    clock.setTime(5000);
+    //clock.setCountdown(true);
+    clock.start();
+
+
+
+    $(".six-item p").equalHeights(); 
 
     var owl = $(".slider");
     owl.owlCarousel({

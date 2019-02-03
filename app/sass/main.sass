@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 h2, .h2
     color: #000
     font-family: "Graffiti1C", sans-serif
-    font-size: 30px
+    font-size: 45px
 
 ul, li
   padding: 0
@@ -353,16 +353,6 @@ b, strong
       z-index: 0
       .button
         width: 280px
-      .shadow
-        font-size: 150px
-        width: 100%
-        font-family: "Graffiti1C", sans-serif
-        color: #f5f5f5
-        position: absolute
-        left: -7px
-        top: -37px
-        z-index: -1
-        text-transform: uppercase
       .quest
         z-index: 120
         font-family: "Graffiti1C", sans-serif
@@ -373,10 +363,21 @@ b, strong
         padding-bottom: 46px
         .button
           margin-bottom: 50px
+.shadow
+        font-size: 150px
+        width: 100%
+        font-family: "Graffiti1C", sans-serif
+        color: #f5f5f5
+        position: absolute
+        left: -7px
+        top: -37px
+        z-index: -1
+        text-transform: uppercase
 
 .sect-2__content
     background: url(../img/bg-21.jpg) center top no-repeat,  url(../img/bg-22.jpg) center bottom no-repeat, url(../img/bg-33.jpg) center top repeat-y
     margin-top: -318px
+    padding-top: 300px
     background-color: #fff
     min-height: 1000px
     width: 100%
@@ -399,9 +400,9 @@ b, strong
     line-height: 90px
     font-weight: 400
     letter-spacing: 0
-    top: -29px
-    left: 43px
-    font-size: 44px
+    top: -19px
+    left: 48px
+    font-size: 57px
 
 .item-wrap
   margin-top: 40px
@@ -535,12 +536,12 @@ b, strong
   .h2
     margin-top: 40px
     margin-bottom: 40px
-
     &::before
       content: 'Только проверенные гиды и экскурсоводы'
-      top: -29px
-      left: 55px
-      font-size: 37px
+      top: -19px
+      left: 12px
+      font-size: 57px
+      white-space: nowrap
   strong
     display: block
     font-size: 22px
@@ -618,10 +619,10 @@ b, strong
     margin-bottom: 40px
     &::before
       content: 'Все экскурсии проходят только на транспорте из нашего парка'
-      top: 0px
-      left: 15px
-      font-size: 37px
-      line-height: 37px
+      top: -4px
+      left: -6px
+      font-size: 57px
+      line-height: 57px
   .bus
     img
       max-width: 100%
@@ -685,6 +686,99 @@ b, strong
 
 //SECTION-6//
 .sect-6
-  min-height: 1000px
+  height: auto
   background: url(../img/bg-6.jpg) center top no-repeat
+  background-size: cover
+  text-align: center
+  padding-bottom: 190px
+  .h2
+    margin-top: 180px
+    color: #fff
+    h2
+      color: #fff
+    &:before
+      content: "6 причин отправиться на экскурсию по индии"
+      top: -4px
+      left: 30px
+      font-size: 57px
+      white-space: nowrap
+  .six-item 
+    margin-top: 76px
+    span
+      font-family: "Graffiti1C", sans-serif
+      font-size: 70px
+      color: #45c7b9
+      padding: 0
+      margin: 0
+      line-height: 24px
+    p
+      font-size: 18px
+      font-family: "ProximaNova", sans-serif
+      padding: 0
+      margin: 0
+      line-height: 24px
+.sect-7
+  .vegan-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-transform: uppercase
+    margin-top: 100px
+    .vegan-left
+      position: relative
+      .shadow
+        left: 25px
+        top: -125px
+      p
+        font-family: "Graffiti1C", sans-serif
+        font-size: 36px
+        color: #212121
+        line-height: 50px
+        padding: 0
+        margin: 0
+      span
+        color: #212121
+        font-size: 22px
+        display: block
+        padding-top: 20px
+      .button
+        width: 278px
+        text-transform: none
+        margin: 40px 0
+    .vegan-right
+      padding-bottom: 45px
+      img
+        max-width: 100%
+
+//TIMER//
+.flip-clock-wrapper ul
+  width: 35px
+  height: 60px
+  font-size: 60px
+.flip-clock-wrapper ul li
+  line-height: 60px
+.flip-clock-wrapper ul li a div div.inn
+  font-size: 60px
+  color: #434343
+  background-color: #f9f9f9
+.flip-clock-dot
+  width: 5px
+  height: 5px
+  padding-top: 5px!important
+.flip-clock-divider
+  height: 80px
+
+.flip-clock-divider .flip-clock-label
+  top: 56px
+  font-size: 13px!important
+  font-family: "ProximaNovaBold", sans-serif
+  right: -67px
+.flip-clock-divider
+  &.minutes
+    .flip-clock-label
+      right: -75px
+.flip-clock-divider.seconds .flip-clock-label 
+    right: -76px
+
+
 @import "media" // Всегда в конце
