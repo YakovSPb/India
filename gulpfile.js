@@ -43,6 +43,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/equalheights/equalheights.js',
 		'app/libs/flipclock/compiled/flipclock.min.js',
 		'app/libs/fancybox/dist/jquery.fancybox.min.js',
+		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

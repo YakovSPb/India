@@ -1,5 +1,26 @@
 $(function() {
 
+
+    $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+        
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+    });
+
+    $(".popup-with-zoom-anim").click(function(){
+        $('#callback .formname').val($(this).data("form"));
+    });
+
     $(".fancybox").fancybox();
 
     jQuery:
@@ -86,11 +107,13 @@ $(function() {
                 url: "mail.php", //Change
                 data: th.serialize()
             }).done(function() {
-                alert("Thank you!");
+                $("succes").addClass("visible");
                 setTimeout(function() {
                     // Done Functions
                     th.trigger("reset");
-                }, 1000);
+                $("succes").removeClass("visible");
+                $.magnificPopup.close();
+                }, 3000);
             });
             return false;
         });
