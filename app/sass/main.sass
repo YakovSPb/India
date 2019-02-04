@@ -3,447 +3,447 @@
 @import "vars"
 
 *
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  &:before, &:after
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
-    box-sizing: border-box
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
 
 *::-webkit-input-placeholder
-  color: #fff
-  opacity: 1
+	color: #fff
+	opacity: 1
 
 *:-moz-placeholder
-  color: #fff
-  opacity: 1
+	color: #fff
+	opacity: 1
 
 *::-moz-placeholder
-  color: #fff
-  opacity: 1
+	color: #fff
+	opacity: 1
 
 *:-ms-input-placeholder
-  color: #fff
-  opacity: 1
+	color: #fff
+	opacity: 1
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-  color: #fff
+	color: #fff
 body input:required:valid,
 body textarea:required:valid
-  color: #fff
+	color: #fff
 
 
 html, body
-  height: 100%
+	height: 100%
 
 body
-  font-size: 16px
-  min-width: 320px
-  position: relative
-  line-height: 1.65
-  font-family: "ProximaNova", sans-serif
-  overflow-x: hidden
-  color: #fff
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: "ProximaNova", sans-serif
+	overflow-x: hidden
+	color: #fff
 
 
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6  
-  line-height: 1.4
-  margin: 0
-  padding: 0
-  
+	line-height: 1.4
+	margin: 0
+	padding: 0
+	
 h2, .h2
-    color: #000
-    font-family: "Graffiti1C", sans-serif
-    font-size: 45px
+		color: #000
+		font-family: "Graffiti1C", sans-serif
+		font-size: 45px
 
 ul, li
-  padding: 0
-  margin: 0
-  
+	padding: 0
+	margin: 0
+	
 a, a:focus, a:active
-  color: $accent
+	color: $accent
 a:hover
-  color: $accent
-  text-decoration: underline
+	color: $accent
+	text-decoration: underline
 b, strong
-  font-family: "ProximaNovaBold", sans-serif
-  font-weight: 500
+	font-family: "ProximaNovaBold", sans-serif
+	font-weight: 500
 .button
-    display: inline-block
-    border: none
-    color: #fff
-    line-height: 28px
-    font-family: "ProximaNovaBold", sans-serif
-    text-decoration: none
-    background: linear-gradient(180deg, #8dc033, #71a418)
-    box-shadow: inset 0 3px 0 0 rgba(255,255,255,0.2)
-    //box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2)
-    padding: 18px 20px
-    height: 60px
-    width: 100%
-    font-size: 18px
-    text-transform: uppercase
-    border-radius: 75px
-    text-align: center
-    position: relative
-    outline: none
-    transition: all .3s ease
-    &:focus, &:hover
-        text-decoration: none
-        color: #fff
-    &:hover
-        opacity: .8
-        &::after
-            opacity: .22
-    &:active
-        background-color: darken($accent, 5%)
-        &::after
-            opacity: .32
+		display: inline-block
+		border: none
+		color: #fff
+		line-height: 28px
+		font-family: "ProximaNovaBold", sans-serif
+		text-decoration: none
+		background: linear-gradient(180deg, #8dc033, #71a418)
+		box-shadow: inset 0 3px 0 0 rgba(255,255,255,0.2)
+		//box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2)
+		padding: 18px 20px
+		height: 60px
+		width: 100%
+		font-size: 18px
+		text-transform: uppercase
+		border-radius: 75px
+		text-align: center
+		position: relative
+		outline: none
+		transition: all .3s ease
+		&:focus, &:hover
+				text-decoration: none
+				color: #fff
+		&:hover
+				opacity: .8
+				&::after
+						opacity: .22
+		&:active
+				background-color: darken($accent, 5%)
+				&::after
+						opacity: .32
 .button-trans
-  color: white
-  font-family: "ProximaNova", sans-serif
-  font-size: 15px
-  width: 249px
-  height: 48px
-  background: rgba(255,255,255, 0.2)
-  border-radius: 24px
-  line-height: 48px
-  text-transform: none
-  box-shadow: none
-  padding: 0
-  &:hover
-    background: rgba(0,0,0, 0.5)
-  &::after
-    height: 0
+	color: white
+	font-family: "ProximaNova", sans-serif
+	font-size: 15px
+	width: 249px
+	height: 48px
+	background: rgba(255,255,255, 0.2)
+	border-radius: 24px
+	line-height: 48px
+	text-transform: none
+	box-shadow: none
+	padding: 0
+	&:hover
+		background: rgba(0,0,0, 0.5)
+	&::after
+		height: 0
 
 .button-empty
-  color: #212121
-  font-family: "ProximaNovaBold", sans-serif
-  font-size: 15px
-  width: 200px
-  border: #8dc033 2px solid
-  height: 40px
-  background: #fff
-  border-radius: 24px
-  line-height: 37px
-  text-transform: none
-  box-shadow: none
-  padding: 0
-  &:hover
-    background: #8dc033
-    color: #ffffff
-  &::after
-    height: 0
+	color: #212121
+	font-family: "ProximaNovaBold", sans-serif
+	font-size: 15px
+	width: 200px
+	border: #8dc033 2px solid
+	height: 40px
+	background: #fff
+	border-radius: 24px
+	line-height: 37px
+	text-transform: none
+	box-shadow: none
+	padding: 0
+	&:hover
+		background: #8dc033
+		color: #ffffff
+	&::after
+		height: 0
 
 .button-blue
-  width: 350px
-  height: 60px
-  text-transform: none
-  background-color: #c2ae86
-  background-image: linear-gradient(180deg, #45c7b9 0%, #36b3a6 100%)
-  border-radius: 30px
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 3px 0 rgba(255, 255, 255, 0.2)
+	width: 350px
+	height: 60px
+	text-transform: none
+	background-color: #c2ae86
+	background-image: linear-gradient(180deg, #45c7b9 0%, #36b3a6 100%)
+	border-radius: 30px
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 3px 0 rgba(255, 255, 255, 0.2)
 
 .img-responsive
-  display: block
-  max-width: 100%
-  height: auto
+	display: block
+	max-width: 100%
+	height: auto
 
 .text-center
-  text-align: center
+	text-align: center
 
 ::selection
-  background-color: $accent
-  color: #fff
+	background-color: $accent
+	color: #fff
 
 //HEADER//
 .site-header
-  min-height: 1000px
-  background-position: 100%
-  background-size: cover
-  position: relative
-  z-index: 0
-  padding-bottom: 270px
+	min-height: 1000px
+	background-position: 100%
+	background-size: cover
+	position: relative
+	z-index: 0
+	padding-bottom: 270px
 
 
-  &:before
-    content: ''
-    background-image: url(../img/head-bg.png)
-    background-size: cover
-    width: 100%
-    height: 100%
-    position: absolute
-    z-index: -1
-    opacity: .35
-  &:after
-    content: ''
-    background-color: #031938
-    opacity: .5
-    width: 100%
-    height: 100%
-    top: 0
-    position: absolute
-    z-index: -1
+	&:before
+		content: ''
+		background-image: url(../img/head-bg.png)
+		background-size: cover
+		width: 100%
+		height: 100%
+		position: absolute
+		z-index: -1
+		opacity: .35
+	&:after
+		content: ''
+		background-color: #031938
+		opacity: .5
+		width: 100%
+		height: 100%
+		top: 0
+		position: absolute
+		z-index: -1
 .top-line
-  height: 125px
-  .logo
-    margin-top: 40px
-    img
-      height: 63px
-      transition: all .5s ease
-      &:hover
-        opacity: .7
-  .phones-wrap
-    float: right
-    margin-top: 50px
-    .phone
-      display: inline-block
-      font-family: "ProximaNovaBold", sans-serif
-      font-size: 22px
-      margin-right: 40px
+	height: 125px
+	.logo
+		margin-top: 40px
+		img
+			height: 63px
+			transition: all .5s ease
+			&:hover
+				opacity: .7
+	.phones-wrap
+		float: right
+		margin-top: 50px
+		.phone
+			display: inline-block
+			font-family: "ProximaNovaBold", sans-serif
+			font-size: 22px
+			margin-right: 40px
 
 
 .header-composition
-  margin-top: 80px
-  span
-    font-size: 22px
-  .h1
-    font-family: "Graffiti1C", sans-serif
-    font-size: 70px
-    line-height: 80px
-    position: relative
-    &::before
-      content: 'Экскурсии в Гоа и по всей Индии'
-      position: absolute
-      top: -12px
-      left: -38px
-      font-family: "Graffiti4C", sans-serif
-      font-size: 80px
-      line-height: 90px
-      font-weight: 400
-      letter-spacing: 1.8px
-  p
-    font-size: 30px
-    line-height: 34px
-    span
-      font-family: "ProximaNovaXbold", sans-serif
+	margin-top: 80px
+	span
+		font-size: 22px
+	.h1
+		font-family: "Graffiti1C", sans-serif
+		font-size: 70px
+		line-height: 80px
+		position: relative
+		&::before
+			content: 'Экскурсии в Гоа и по всей Индии'
+			position: absolute
+			top: -12px
+			left: -38px
+			font-family: "Graffiti4C", sans-serif
+			font-size: 80px
+			line-height: 90px
+			font-weight: 400
+			letter-spacing: 1.8px
+	p
+		font-size: 30px
+		line-height: 34px
+		span
+			font-family: "ProximaNovaXbold", sans-serif
 
 .icons-wrap
-  margin-top: 50px
-  .head-icon
-    width: 360px
-    float: left
-    img
-      width: 55px
-      height: auto
-      float: left
-      margin-right: 20px
-    p
-      text-transform: uppercase
-      font-size: 15px
-      line-height: 22px
+	margin-top: 50px
+	.head-icon
+		width: 360px
+		float: left
+		img
+			width: 55px
+			height: auto
+			float: left
+			margin-right: 20px
+		p
+			text-transform: uppercase
+			font-size: 15px
+			line-height: 22px
 
 
 .forms
-  border: rgba(255, 255, 255, .30) 15px solid
-  width: 390px
-  margin: 55px 0
-  padding: 25px 22px
-  font-size: 20px
-  line-height: 28px
+	border: rgba(255, 255, 255, .30) 15px solid
+	width: 390px
+	margin: 55px 0
+	padding: 25px 22px
+	font-size: 20px
+	line-height: 28px
 
-  span
-    position: relative
-    &:before
-     top: 5px
-     left: 10px
-     content: ''
-     width: 17px
-     position: absolute
-     height: 20px
-     background-repeat: no-repeat
-  .name
-    &:before
-      background-image: url(../img/user.svg)
-  .phone
-    &:before
-      background-image: url(../img/telephone.svg)
-      background-size: 17px
-  .message
-    &:before
-      background-image: url(../img/comment.svg)
-      background-size: 18px
-      width: 20px
-  p
-    padding-right: 55px
-    margin-bottom: 0
-  input
-    background-color: transparent
-    width: 100%
-    padding-left: 40px
-    padding-top: 10px
-    margin-top: 30px
-    padding-bottom: 10px
-    border: none
-    border-bottom: #616f7b 1px solid
-    color: #ffffff
-    font-size: 15px
-  input::placeholder
-    color: #fff
-    text-transform: uppercase
-  input[type="text"]
-    color: #fff
-    text-transform: none
+	span
+		position: relative
+		&:before
+		 top: 5px
+		 left: 10px
+		 content: ''
+		 width: 17px
+		 position: absolute
+		 height: 20px
+		 background-repeat: no-repeat
+	.name
+		&:before
+			background-image: url(../img/user.svg)
+	.phone
+		&:before
+			background-image: url(../img/telephone.svg)
+			background-size: 17px
+	.message
+		&:before
+			background-image: url(../img/comment.svg)
+			background-size: 18px
+			width: 20px
+	p
+		padding-right: 55px
+		margin-bottom: 0
+	input
+		background-color: transparent
+		width: 100%
+		padding-left: 40px
+		padding-top: 10px
+		margin-top: 30px
+		padding-bottom: 10px
+		border: none
+		border-bottom: #616f7b 1px solid
+		color: #ffffff
+		font-size: 15px
+	input::placeholder
+		color: #fff
+		text-transform: uppercase
+	input[type="text"]
+		color: #fff
+		text-transform: none
 
 .button-wrap
-  margin-top: 28px
-  margin-bottom: 35px
+	margin-top: 28px
+	margin-bottom: 35px
 .sendmes
-  font-size: 14px
-  line-height: 18px
-  span
-    text-decoration: underline
+	font-size: 14px
+	line-height: 18px
+	span
+		text-decoration: underline
 
 .header-button-cloud
-  background-image: url(../img/bg-cloud.png)
-  position: absolute
-  background-size: cover
-  background-position: bottom center
-  bottom: -214px
-  left: 0
-  width: 100%
-  height: 449px
-  z-index: 0
+	background-image: url(../img/bg-cloud.png)
+	position: absolute
+	background-size: cover
+	background-position: bottom center
+	bottom: -214px
+	left: 0
+	width: 100%
+	height: 449px
+	z-index: 0
 .mouse
-    width: 30px
-    height: 40px
-    position: absolute
-    left: 50%
-    margin-left: -30px
-    background-repeat: no-repeat
-    transition: all .5s ease
-    &:hover
-      transform: scale(1.2)
+		width: 30px
+		height: 40px
+		position: absolute
+		left: 50%
+		margin-left: -30px
+		background-repeat: no-repeat
+		transition: all .5s ease
+		&:hover
+			transform: scale(1.2)
 //END HEADER//
 
 //SECTION SECT-2//
 .sect-2
-  z-index: 2
-  position: relative
-  &::before
-    box-shadow: inset 0 -52px 19px -8px rgba(255,255,255,1)
-    content: ''
-    position: absolute
-    width: 100%
-    height: 100px
-    left: 0
-    top: -100px
-  &__wrap
-    position: relative
-    text-align: center
-    z-index: 300
-    &__head
-      padding:
-        top: 100px
-        bottom: 40px
-      position: relative
-      z-index: 0
-      .button
-        width: 280px
-      .quest
-        z-index: 120
-        font-family: "Graffiti1C", sans-serif
-        font-size: 46px
-        line-height: 1.1
-        color: #212121
-        text-transform: uppercase
-        padding-bottom: 46px
-        .button
-          margin-bottom: 50px
+	z-index: 2
+	position: relative
+	&::before
+		box-shadow: inset 0 -52px 19px -8px rgba(255,255,255,1)
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100px
+		left: 0
+		top: -100px
+	&__wrap
+		position: relative
+		text-align: center
+		z-index: 300
+		&__head
+			padding:
+				top: 100px
+				bottom: 40px
+			position: relative
+			z-index: 0
+			.button
+				width: 280px
+			.quest
+				z-index: 120
+				font-family: "Graffiti1C", sans-serif
+				font-size: 46px
+				line-height: 1.1
+				color: #212121
+				text-transform: uppercase
+				padding-bottom: 46px
+				.button
+					margin-bottom: 50px
 .shadow
-        font-size: 150px
-        width: 100%
-        font-family: "Graffiti1C", sans-serif
-        color: #f5f5f5
-        position: absolute
-        left: -7px
-        top: -37px
-        z-index: -1
-        text-transform: uppercase
+				font-size: 150px
+				width: 100%
+				font-family: "Graffiti1C", sans-serif
+				color: #f5f5f5
+				position: absolute
+				left: -7px
+				top: -37px
+				z-index: -1
+				text-transform: uppercase
 
 .sect-2__content
-    background: url(../img/bg-21.jpg) center top no-repeat,  url(../img/bg-22.jpg) center bottom no-repeat, url(../img/bg-33.jpg) center top repeat-y
-    margin-top: -318px
-    padding-top: 300px
-    background-color: #fff
-    min-height: 1000px
-    width: 100%
-    z-index: 20
-    position: relative
-    text-align: center
-    padding-bottom: 80px
+		background: url(../img/bg-21.jpg) center top no-repeat,  url(../img/bg-22.jpg) center bottom no-repeat, url(../img/bg-33.jpg) center top repeat-y
+		margin-top: -318px
+		padding-top: 300px
+		background-color: #fff
+		min-height: 1000px
+		width: 100%
+		z-index: 20
+		position: relative
+		text-align: center
+		padding-bottom: 80px
 .h2
-  color: #000
-  font-family: "Graffiti1C", sans-serif
-  font-size: 30px
-  position: relative
-  display: inline-block
-  margin-top: 120px
-  padding: 0 100px
-  &::before
-    content: 'Актуальные предложения'
-    position: absolute
-    font-family: "Graffiti4C", sans-serif
-    line-height: 90px
-    font-weight: 400
-    letter-spacing: 0
-    top: -19px
-    left: 48px
-    font-size: 57px
+	color: #000
+	font-family: "Graffiti1C", sans-serif
+	font-size: 30px
+	position: relative
+	display: inline-block
+	margin-top: 120px
+	padding: 0 100px
+	&::before
+		content: 'Актуальные предложения'
+		position: absolute
+		font-family: "Graffiti4C", sans-serif
+		line-height: 90px
+		font-weight: 400
+		letter-spacing: 0
+		top: -19px
+		left: 48px
+		font-size: 57px
 
 .item-wrap
-  margin-top: 40px
-  margin-bottom: 50px
-  background-color: #fff
-  text-align: left
-  position: relative
-  height: auto
-  padding-bottom: 30px
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05)
-  img
-    width: 100%
-    height: auto
-  &__circle
-    width: 78px
-    height: 78px
-    position: absolute
-    background-color: #45c7b9
-    border-radius: 10em
-    font-family: "ProximaNovaBold", sans-serif
-    text-align: center
-    line-height: 78px
-    font-size: 18px
-    left: 20px
-    top: 20px
+	margin-top: 40px
+	margin-bottom: 50px
+	background-color: #fff
+	text-align: left
+	position: relative
+	height: auto
+	padding-bottom: 30px
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05)
+	img
+		width: 100%
+		height: auto
+	&__circle
+		width: 78px
+		height: 78px
+		position: absolute
+		background-color: #45c7b9
+		border-radius: 10em
+		font-family: "ProximaNovaBold", sans-serif
+		text-align: center
+		line-height: 78px
+		font-size: 18px
+		left: 20px
+		top: 20px
 
-  &__content
-    padding-left: 30px
-    h4
-      color: #212121
-      font-family: "ProximaNovaBold", sans-serif
-      font-size: 22px
-      padding:
-        top: 30px
-        bottom: 20px
-    p
-      color: #212121
-      font-size: 15px
-      padding: 0
-      margin-top: 0
-      margin-bottom: 40px
+	&__content
+		padding-left: 30px
+		h4
+			color: #212121
+			font-family: "ProximaNovaBold", sans-serif
+			font-size: 22px
+			padding:
+				top: 30px
+				bottom: 20px
+		p
+			color: #212121
+			font-size: 15px
+			padding: 0
+			margin-top: 0
+			margin-bottom: 40px
 
 //END SECTION SECT-2//
 
@@ -499,348 +499,406 @@ b, strong
 
 //SECTION SECT-3//
 
-.sect-3
-  height: 730px
-  background-image: url(../img/bg-boat.jpg)
-  background-repeat: no-repeat
-  background-position:  top center
-  position: relative
-  padding-top: 260px
-  .tex
-    p
-     text-transform: uppercase
-     font-family: "Graffiti1C", sans-serif
-     font-size: 46px
-     color: #212121
-     line-height: auto
-     line-height: 50px
+.sect-3, .sect-9
+	height: 730px
+	background-image: url(../img/bg-boat.jpg)
+	background-repeat: no-repeat
+	background-position:  top center
+	position: relative
+	padding-top: 260px
+	.tex
+		p
+		 text-transform: uppercase
+		 font-family: "Graffiti1C", sans-serif
+		 font-size: 46px
+		 color: #212121
+		 line-height: auto
+		 line-height: 50px
 
-  .button
-    margin-top: 30px
-    margin-bottom: 30px
-    width: 280px
+	.button
+		margin-top: 30px
+		margin-bottom: 30px
+		width: 280px
 
 //SECTION SECT-4//
 .sect-4
-  border-radius: 10em
-  text-align: center
-  position: relative
-  .item
-    img
-      width: 100%
-      height: auto
-      width: 220px
-      height: 220px
-      border-radius: 10em
-      box-shadow: 0 0 0 10px #fff, 0 0 0 12px #eceae5
-  .h2
-    margin-top: 40px
-    margin-bottom: 40px
-    &::before
-      content: 'Только проверенные гиды и экскурсоводы'
-      top: -19px
-      left: 12px
-      font-size: 57px
-      white-space: nowrap
-  strong
-    display: block
-    font-size: 22px
-    color: #212121
-    padding-top: 25px
-    line-height: 20px
-  span
-    font-size: 16px
-    color: #212121
+	border-radius: 10em
+	text-align: center
+	position: relative
+	.item
+		img
+			width: 100%
+			height: auto
+			width: 220px
+			height: 220px
+			border-radius: 10em
+			box-shadow: 0 0 0 10px #fff, 0 0 0 12px #eceae5
+	.h2
+		margin-top: 40px
+		margin-bottom: 40px
+		&::before
+			content: 'Только проверенные гиды и экскурсоводы'
+			top: -19px
+			left: 12px
+			font-size: 57px
+			white-space: nowrap
+	strong
+		display: block
+		font-size: 22px
+		color: #212121
+		padding-top: 25px
+		line-height: 20px
+	span
+		font-size: 16px
+		color: #212121
 
 ///SLIDER//
 .slider
-  top: 0
-  width: 100%
-  overflow: hidden
-  position: relative
-  padding-bottom: 60px
-  .slide-wrap
-    float: left
-    .slide
-      position: relative
-      .img
-        width: 100%
+	top: 0
+	width: 100%
+	overflow: hidden
+	position: relative
+	padding-bottom: 60px
+	.slide-wrap
+		float: left
+		.slide
+			position: relative
+			.img
+				width: 100%
 
 .owl-nav
-  display: none
-  
+	display: none
+	
 .sect-portfolio
-  .prev
-    background-image: url(../img/left_hand.png)
-    background-repeat: no-repeat
-    width: 181px
-    height: 313px
-    position: absolute
-    left: 426px
-    bottom: 0
-  .next
-    background-image: url(../img/right_hand.png)
-    background-repeat: no-repeat
-    width: 181px
-    height: 313px
-    position: absolute
-    right: 429px
-    bottom: 0
+	.prev
+		background-image: url(../img/left_hand.png)
+		background-repeat: no-repeat
+		width: 181px
+		height: 313px
+		position: absolute
+		left: 426px
+		bottom: 0
+	.next
+		background-image: url(../img/right_hand.png)
+		background-repeat: no-repeat
+		width: 181px
+		height: 313px
+		position: absolute
+		right: 429px
+		bottom: 0
 
 .owl-dots
-  position: absolute
-  bottom: 13px
-  width: 100%
-  text-align: center
-  .owl-dot
-    margin: 0 10px
-    width: 17px
-    height: 17px
-    background-color: #fff
-    border-radius: 10em
-    border: none
-    cursor: pointer
-    transition: background-color .25s ease
-    border: 1px solid gray
-    &.active
-      background-color: #71a418
-      border: 1px solid #71a418
+	position: absolute
+	bottom: 13px
+	width: 100%
+	text-align: center
+	.owl-dot
+		margin: 0 10px
+		width: 17px
+		height: 17px
+		background-color: #fff
+		border-radius: 10em
+		border: none
+		cursor: pointer
+		transition: background-color .25s ease
+		border: 1px solid gray
+		&.active
+			background-color: #71a418
+			border: 1px solid #71a418
 //END SLIDER//
 
 //SECTION 5//
 .sect-5
-  text-align: center
-  min-height: 1100px
-  background: url(../img/bg-5.jpg) center top no-repeat
-  background-repeat: no-repeat
-  background-color: #f4f3f1
-  .h2
-    margin-top: 40px
-    margin-bottom: 40px
-    &::before
-      content: 'Все экскурсии проходят только на транспорте из нашего парка'
-      top: -4px
-      left: -6px
-      font-size: 57px
-      line-height: 57px
-  .bus
-    img
-      max-width: 100%
-  .bus-items
-    display: flex
-    justify-content: space-between
-    .bus-item
-      text-align: center
-      margin: 15px
-      span
-        font-family: "Graffiti1C", sans-serif
-        color: #dbdad9
-        font-size: 90px
-      p
-        color: #000
-        font-size: 18px
-        margin-top: -72px
+	text-align: center
+	min-height: 1100px
+	background: url(../img/bg-5.jpg) center top no-repeat
+	background-repeat: no-repeat
+	background-color: #f4f3f1
+	.h2
+		margin-top: 40px
+		margin-bottom: 40px
+		&::before
+			content: 'Все экскурсии проходят только на транспорте из нашего парка'
+			top: -4px
+			left: -6px
+			font-size: 57px
+			line-height: 57px
+	.bus
+		img
+			max-width: 100%
+	.bus-items
+		display: flex
+		justify-content: space-between
+		.bus-item
+			text-align: center
+			margin: 15px
+			span
+				font-family: "Graffiti1C", sans-serif
+				color: #dbdad9
+				font-size: 90px
+			p
+				color: #000
+				font-size: 18px
+				margin-top: -72px
 
 .bus-form
-    border: #dbdad9 10px solid
-    padding-bottom: 20px
-    margin-bottom: 20px
-    .forms
-      width: 100%
-      border-color: transparent
-      padding-top: 0
-      margin-top: 10px
+		border: #dbdad9 10px solid
+		padding-bottom: 20px
+		margin-bottom: 20px
+		.forms
+			width: 100%
+			border-color: transparent
+			padding-top: 0
+			margin-top: 10px
 
-      input[type="text"]
-        width: 100%
-        margin-right: 22px
-        color: #212121
-      input::placeholder
-        color: #212121
-      input[type="text"]:focus
-        color: #212121
-        cursor: text
-        outline: none
-      p
-        color: #212121 
-        margin: 0
-        padding: 0
-        font-size: 30px
-        line-height: 36px
-      span
-      .sendmes
-        color: #212121
-        padding-top: 40px
-      .name
-        &:before
-          background-image: url(../img/user2.svg)
-      .phone
-        &:before
-          background-image: url(../img/telephone2.svg)
-      .message
-        &:before
-          background-image: url(../img/comment2.svg)
-      .button
-        max-width: 306px
+			input[type="text"]
+				width: 100%
+				margin-right: 22px
+				color: #212121
+			input::placeholder
+				color: #212121
+			input[type="text"]:focus
+				color: #212121
+				cursor: text
+				outline: none
+			p
+				color: #212121 
+				margin: 0
+				padding: 0
+				font-size: 30px
+				line-height: 36px
+			span
+			.sendmes
+				color: #212121
+				padding-top: 40px
+			.name
+				&:before
+					background-image: url(../img/user2.svg)
+			.phone
+				&:before
+					background-image: url(../img/telephone2.svg)
+			.message
+				&:before
+					background-image: url(../img/comment2.svg)
+			.button
+				max-width: 306px
 
 
 //SECTION-6//
 .sect-6
-  height: auto
-  background: url(../img/bg-6.jpg) center top no-repeat
-  background-size: cover
-  text-align: center
-  padding-bottom: 190px
-  .h2
-    margin-top: 180px
-    color: #fff
-    h2
-      color: #fff
-    &:before
-      content: "6 причин отправиться на экскурсию по индии"
-      top: -4px
-      left: 30px
-      font-size: 57px
-      white-space: nowrap
-  .six-item 
-    margin-top: 76px
-    span
-      font-family: "Graffiti1C", sans-serif
-      font-size: 70px
-      color: #45c7b9
-      padding: 0
-      margin: 0
-      line-height: 24px
-    p
-      font-size: 18px
-      font-family: "ProximaNova", sans-serif
-      padding: 0
-      margin: 0
-      line-height: 24px
+	height: auto
+	background: url(../img/bg-6.jpg) center top no-repeat
+	background-size: cover
+	text-align: center
+	padding-bottom: 190px
+	.h2
+		margin-top: 180px
+		color: #fff
+		h2
+			color: #fff
+		&:before
+			content: "6 причин отправиться на экскурсию по индии"
+			top: -4px
+			left: 30px
+			font-size: 57px
+			white-space: nowrap
+	.six-item 
+		margin-top: 76px
+		span
+			font-family: "Graffiti1C", sans-serif
+			font-size: 70px
+			color: #45c7b9
+			padding: 0
+			margin: 0
+			line-height: 24px
+		p
+			font-size: 18px
+			font-family: "ProximaNova", sans-serif
+			padding: 0
+			margin: 0
+			line-height: 24px
 .sect-7
-  .vegan-wrap
-    display: flex
-    justify-content: space-between
-    align-items: center
-    text-transform: uppercase
-    margin-top: 100px
-    .vegan-left
-      position: relative
-      .shadow
-        left: 25px
-        top: -125px
-      p
-        font-family: "Graffiti1C", sans-serif
-        font-size: 36px
-        color: #212121
-        line-height: 50px
-        padding: 0
-        margin: 0
-      span
-        color: #212121
-        font-size: 22px
-        display: block
-        padding-top: 20px
-      .button
-        width: 278px
-        text-transform: none
-        margin: 40px 0
-    .vegan-right
-      padding-bottom: 45px
-      img
-        max-width: 100%
+	.vegan-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		text-transform: uppercase
+		margin-top: 100px
+		.vegan-left
+			position: relative
+			.shadow
+				left: 25px
+				top: -125px
+			p
+				font-family: "Graffiti1C", sans-serif
+				font-size: 36px
+				color: #212121
+				line-height: 50px
+				padding: 0
+				margin: 0
+			span
+				color: #212121
+				font-size: 22px
+				display: block
+				padding-top: 20px
+			.button
+				width: 278px
+				text-transform: none
+				margin: 40px 0
+		.vegan-right
+			padding-bottom: 45px
+			img
+				max-width: 100%
 
 //TIMER//
 .flip-clock-wrapper ul
-  width: 35px
-  height: 60px
-  font-size: 60px
+	width: 35px
+	height: 60px
+	font-size: 60px
 .flip-clock-wrapper ul li
-  line-height: 60px
+	line-height: 60px
 .flip-clock-wrapper ul li a div div.inn
-  font-size: 60px
-  color: #434343
-  background-color: #f9f9f9
+	font-size: 60px
+	color: #434343
+	background-color: #f9f9f9
 .flip-clock-dot
-  width: 5px
-  height: 5px
-  padding-top: 5px!important
+	width: 5px
+	height: 5px
+	padding-top: 5px!important
 .flip-clock-divider
-  height: 80px
+	height: 80px
 
 .flip-clock-divider .flip-clock-label
-  top: 56px
-  font-size: 13px!important
-  font-family: "ProximaNovaBold", sans-serif
-  right: -67px
+	top: 56px
+	font-size: 13px!important
+	font-family: "ProximaNovaBold", sans-serif
+	right: -67px
 .flip-clock-divider
-  &.minutes
-    .flip-clock-label
-      right: -75px
+	&.minutes
+		.flip-clock-label
+			right: -75px
 .flip-clock-divider.seconds .flip-clock-label 
-    right: -76px
+		right: -76px
 
 //SECTION 8//
 .sect-8
-  text-align: center
-  min-height: 1060px
-  background: url(../img/bg-8-1.jpg) top center no-repeat, url(../img/bg-8-2.jpg) bottom center no-repeat, url(../img/bg-8-3.jpg) top center repeat-y
-  margin-top: -260px
-  padding-top: 300px
-  .h2
-    h2
-    &:before
-      content: "отзывы"
-      top: -18px
-      left: 84px
-  .item
-    img
-      margin-top: 40px
-      width: 100%
-      height: auto
-      width: 150px
-      height: 150px
-      border-radius: 10em
-      box-shadow: 0 0 0 10px #fff, 0 0 0 12px #eceae5
-  strong
-    display: block
-    font-size: 22px
-    color: #212121
-    padding-top: 40px
-    line-height: 20px
-  span
-    font-size: 16px
-    color: #212121
-    display: block
-  .texy
-    max-width: 680px
-    display: inline-block
-    margin-top: 20px
-    padding-top: 30px
-    background: url(../img/quote.png) no-repeat top center
-    p
-      color: #212121
-      font-size: 18px
-      padding: 0
-      margin: 0
+	text-align: center
+	min-height: 1060px
+	background: url(../img/bg-8-1.jpg) top center no-repeat, url(../img/bg-8-2.jpg) bottom center no-repeat, url(../img/bg-8-3.jpg) top center repeat-y
+	margin-top: -260px
+	padding-top: 300px
+	.h2
+		h2
+		&:before
+			content: "отзывы"
+			top: -18px
+			left: 84px
+	.item
+		img
+			margin-top: 40px
+			width: 100%
+			height: auto
+			width: 150px
+			height: 150px
+			border-radius: 10em
+			box-shadow: 0 0 0 10px #fff, 0 0 0 12px #eceae5
+	strong
+		display: block
+		font-size: 22px
+		color: #212121
+		padding-top: 40px
+		line-height: 20px
+	span
+		font-size: 16px
+		color: #212121
+		display: block
+	.texy
+		max-width: 680px
+		display: inline-block
+		margin-top: 20px
+		padding-top: 30px
+		background: url(../img/quote.png) no-repeat top center
+		p
+			color: #212121
+			font-size: 18px
+			padding: 0
+			margin: 0
 //SLIDER 2//
 .slider2
-  top: 0
-  width: 100%
-  overflow: hidden
-  position: relative
-  padding-bottom: 60px
-  .slide-wrap
-    float: left
-    .slide2
-      position: relative
-      .img
-        width: 100%
+	top: 0
+	width: 100%
+	overflow: hidden
+	position: relative
+	padding-bottom: 60px
+	.slide-wrap
+		float: left
+		.slide2
+			position: relative
+			.img
+				width: 100%
 
 
 //SECTION 9//
 .sect-9
-  background: url(../img/bg-9.jpg) top center no-repeat
-  min-height: 600px
+	background: url(../img/bg-9.jpg) top center no-repeat
+	height: auto
+	min-height: 625px
+	padding-top: 113px
+	.tex
+		p
+			margin-bottom: 20px
+			font-size: 36px
+			line-height: 40px
+		span
+			color: #212121
+			font-size: 18px
+	.button
+		text-transform: none
+
+//SECTION 10//
+.sect-10
+		text-align: center
+		min-height: 800px
+		.h2 
+			display: inline-block
+			margin-top: 60px
+			h2
+			&:before
+					content: "Фото и видео с наших экскурсий"
+					top: -18px
+					left: 38px
+		.tabs-wrap
+			margin-top: 30px
+			margin-bottom: 30px
+			.tabs
+					.button
+						width: 164px
+						font-size: 20px
+						text-transform: none
+						background: #efedeb
+						color: #212121
+						cursor: pointer
+						margin-right: 20px
+						height: 50px
+						line-height: 19px
+						margin-top: 20px
+						&:hover
+							background-image: linear-gradient(180deg,#45c7b9 0,#36b3a6 100%)
+							color: #fff
+						&.active
+							@extend .button-blue
+							width: 164px
+							font-size: 20px
+							color: #fff
+							height: 50px
+
+.tab-content
+	color: #000
+	.tab_item
+		.e-item
+			padding-top: 30px
+			img
+				width: 100%	
+				height: auto
 
 @import "media" // Всегда в конце

@@ -1,5 +1,16 @@
 $(function() {
-    
+
+    $(".fancybox").fancybox();
+
+    jQuery:
+    $(".tab_item").not(":first").hide();
+    $(".tabs-wrap .tab").click(function() {
+        $(".tabs-wrap .tab").removeClass("active").eq($(this).index()).addClass
+
+        ("active");
+        $(".tab_item").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
+
 
     var clock;
     clock = $(".clock").FlipClock({
@@ -30,25 +41,25 @@ $(function() {
         nav: false,
         dots: true,
         dotsEach: 2,
-            responsive:{
-        0:{
-            items:1,
-            dotsEach: 1    
-        },
+        responsive:{
+            0:{
+                items:1,
+                dotsEach: 1    
+            },
 
-        600:{
-            items:2,
-            dotsEach: 1
-        },
-        1000:{
-            items:3,
-            dotsEach: 1
-        },
-        1200:{
-            items:4,    
+            600:{
+                items:2,
+                dotsEach: 1
+            },
+            1000:{
+                items:3,
+                dotsEach: 1
+            },
+            1200:{
+                items:4,    
 
-        },
-     }
+            },
+        }
     });
 
 
