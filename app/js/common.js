@@ -24,6 +24,7 @@ $(function() {
     var owl = $(".slider");
     owl.owlCarousel({
         loop : true,
+        smartSpeed: 700,
         items: 4,
         itemClass: "slide-wrap",
         nav: false,
@@ -48,6 +49,19 @@ $(function() {
 
         },
      }
+    });
+
+
+    var owl2 = $(".slider2");
+    owl2.owlCarousel({
+        loop : true,
+        smartSpeed: 700,
+        items: 1,
+        itemClass: "slide-wrap",
+        nav: false,
+        dots: true,
+        dotsEach: 1,
+
     });
 
 
