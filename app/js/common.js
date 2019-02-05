@@ -1,5 +1,12 @@
 $(function() {
 
+    $('.open-popup-link').magnificPopup({
+  type:'inline',
+  closeOnContentClick:'true',
+
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+
 
     $('.popup-with-zoom-anim').magnificPopup({
         type: 'inline',
@@ -17,7 +24,44 @@ $(function() {
         mainClass: 'my-mfp-slide-bottom'
     });
 
-    $(".popup-with-zoom-anim").click(function(){
+    $(".sect-2__wrap .popup-with-zoom-anim").click(function(){
+        $('.popup-form h3').html('Получить анкету на почту');
+        $('.popup-form label:eq(1) span').html('Ваша почта:');
+        $('.popup-form label:eq(1) input').attr('placeholder', 'Введите вашу почту...');
+        $('#callback .formname').val($(this).data("form"));
+    });
+
+    $(".sect-3 .popup-with-zoom-anim").click(function(){
+          $('.popup-form h3').html('Заказать звонок');
+          $('.popup-form label:eq(1) span').html('Ваш телефон:');
+           $('.popup-form label:eq(1) input').attr('placeholder', 'Введите ваш телефон...');
+        $('#callback .formname').val($(this).data("form"));
+    });
+
+    $(".sect-7 .popup-with-zoom-anim").click(function(){
+          $('.popup-form h3').html('Получить скидку');
+          $('.popup-form label:eq(1) span').html('Ваш телефон:');
+           $('.popup-form label:eq(1) input').attr('placeholder', 'Введите ваш телефон...');
+        $('#callback .formname').val($(this).data("form"));
+    });
+
+    $(".sect-9 .popup-with-zoom-anim").click(function(){
+          $('.popup-form h3').html('Узнать подробнее');
+          $('.popup-form label:eq(1) span').html('Ваш телефон:');
+           $('.popup-form label:eq(1) input').attr('placeholder', 'Введите ваш телефон...');
+        $('#callback .formname').val($(this).data("form"));
+    });
+     $(".foot .popup-with-zoom-anim").click(function(){
+          $('.popup-form h3').html('Оставить заявку');
+          $('.popup-form label:eq(1) span').html('Ваш телефон:');
+           $('.popup-form label:eq(1) input').attr('placeholder', 'Введите ваш телефон...');
+        $('#callback .formname').val($(this).data("form"));
+    });
+
+     $(".sect-2__content").click(function(){
+          $('.popup-form h3').html('Получить все предложения');
+          $('.popup-form label:eq(1) span').html('Ваша почта:');
+           $('.popup-form label:eq(1) input').attr('placeholder', 'Введите вашу почту...');
         $('#callback .formname').val($(this).data("form"));
     });
 
@@ -97,32 +141,31 @@ $(function() {
     });
 
 
-    $(document).ready(function() {
 
-        //E-mail Ajax Send
-        $("form").submit(function() { //Change
+//E-mail Ajax Send
+     $("form").submit(function() { //Change
             var th = $(this);
             $.ajax({
                 type: "POST",
                 url: "mail.php", //Change
                 data: th.serialize()
             }).done(function() {
-                $("succes").addClass("visible");
+                $(th).find('.success2').addClass('active').css('display', 'flex').hide().fadeIn();
+                $(".success").addClass("visible");
                 setTimeout(function() {
                     // Done Functions
                     th.trigger("reset");
-                $("succes").removeClass("visible");
+                $(th).find('.success2').removeClass('active').fadeOut();    
+                $(".success").removeClass("visible");
                 $.magnificPopup.close();
                 }, 3000);
             });
             return false;
         });
 
-    });
+
 
 });
-
-
 $(window).on('load', function(){
     $('.preloader').delay(1000).fadeOut('slow');
 })

@@ -100,7 +100,7 @@ gulp.task('deploy', function() {
 
 	var conn = ftp.create({
 		host:      'prospekt.pro',
-		user:      'user',
+		user:      'raskrut3ru',
 		password:  'user',
 		parallel:  10,
 		log: gutil.log
@@ -111,7 +111,7 @@ gulp.task('deploy', function() {
 	'dist/.htaccess',
 	];
 	return gulp.src(globs, {buffer: false})
-	.pipe(conn.dest('/test3/public_html'));
+	.pipe(conn.dest('/india/public_html'));
 
 });
 
